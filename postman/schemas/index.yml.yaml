@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: Swagger Petstore OpenAPI3 YML
+  title: Swagger Petstore OpenAPI3 YML1
   license:
     name: MIT
 servers:
