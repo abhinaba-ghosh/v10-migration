@@ -1,0 +1,19 @@
+id = bd365735-4169-444c-869e-8d2f9372eb12
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+files[] = {"id":"4dff1761-1be1-4af8-8988-05c4f1ffadc4","path":"ADP Integration Tests Copy_becba5aa-2dbd-4e65-9b33-2e5b22d18e3d.json","metaData":{}}
+files[] = {"id":"4b47ac07-ea96-4294-979a-f296ecacf436","path":"col 1_e98dde8c-8ff8-47a2-a572-3e34666bd65e.json","metaData":{}}
+files[] = {"id":"e003bdf1-1b59-4da9-924f-3b662e3c7f9a","path":"col-2_43d0d347-1cfa-4021-a8f7-84b33906c1f6.json","metaData":{}}
+files[] = {"id":"10becde6-bb57-4020-9c2b-e4c2892bae2c","path":"OpenAPI With Multiple Large Linked Collections.json","metaData":{}}
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = postman
+files[] = {"path":"openapi3.yml","metaData":{}}
+files[] = {"path":"schemas/index.yml.yaml","metaData":{}}
+
+[relations.apiDefinition.metaData]
