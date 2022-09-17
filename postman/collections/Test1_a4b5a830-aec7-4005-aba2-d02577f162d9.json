@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "47af03f7-59de-47eb-a508-ffd5abd2c2f6",
+		"name": "Test1",
+		"description": "Buy or rent spacecrafts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read a spacecraft",
+			"id": "26c0343c-299e-41ca-bde0-9dcb32e1eb4e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"spacecrafts",
+						":spacecraftId"
+					],
+					"variable": [
+						{
+							"id": "96d0c157-b0cf-4a77-9541-287bf38efeb4",
+							"key": "spacecraftId",
+							"value": "Excepteur officia dol",
+							"description": "(Required) The unique identifier of the spacecraft"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "d2b87a30-3387-46f3-b079-138c9e688620",
+					"name": "The spacecraft corresponding to the provided `spacecraftId`",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-Api-Key",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId"
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "Excepteur officia dol",
+									"description": "(Required) The unique identifier of the spacecraft"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"aliqua quis consectetur in\",\n  \"type\": \"capsule\",\n  \"description\": \"commodo Duis\"\n}"
+				},
+				{
+					"id": "dfbc807a-9fbe-413e-b57f-00cfe11ee3c1",
+					"name": "No spacecraft found for the provided `spacecraftId`",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-Api-Key",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId"
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "Excepteur officia dol",
+									"description": "(Required) The unique identifier of the spacecraft"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"message\": \"Duis incididunt laborum nostrud\"\n}"
+				},
+				{
+					"id": "ad4d83e9-c3d7-4a28-ba64-8feb5f6aee94",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-Api-Key",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId"
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "Excepteur officia dol",
+									"description": "(Required) The unique identifier of the spacecraft"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"message\": \"Duis incididunt laborum nostrud\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-Api-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "<API Key>",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "94c6affe-9116-4662-ba43-2aede08bd79d",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
